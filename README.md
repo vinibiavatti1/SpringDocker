@@ -64,7 +64,7 @@ Pré Requisitos necessários para execução do projeto:
 - Maven
 - Docker (Serviço e Usuário) 
 
-Ao contribuir com o projeto, a imagem do projeto em docker deve ser gerada. Para isto, basta executar o comando abaixo tendo como base o diretório raiz do projeto:
+Ao contribuir com o projeto, a imagem em docker deve ser gerada. Para isto, basta executar o comando abaixo tendo como base o diretório raiz do projeto:
 
 ```bash
 $ ./mvnw install dockerfile:build
