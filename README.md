@@ -27,28 +27,55 @@ O serviço irá estar iniciado com sucesso assim que a seguinte mensagem ser exi
 
 ## Dados
 Os dados são disponibilizados em memória toda vez que a aplicação é iniciada e os mesmos não são persistidos. Abaixo seguem dos dados disponíveis na aplicação:
- 
+
+**Tabela:** Autor
+
 | id | nome |
 | --- | --- |
 | 1 | William Shakespeare |
 | 2 | Jane Austen |
 | 3 | Fiodor Dostoievski |
- 
- /*
- * Autores
- */
-INSERT INTO Autor VALUES (1, 'William Shakespeare')
-INSERT INTO Autor VALUES (2, 'Jane Austen')
-INSERT INTO Autor VALUES (3, 'Fiodor Dostoievski')
 
-/*
- * Livros
- */
-INSERT INTO Livro VALUES (1, 'Macbeth', '0', 'Macbeth e um livro de Shakespeare', 1)
-INSERT INTO Livro VALUES (2, 'Hamlet', '1', 'Hamlet e um livro de Shakespeare', 1)
-INSERT INTO Livro VALUES (3, 'Emma', '2', 'Emma e um livro de Austen', 2)
-INSERT INTO Livro VALUES (4, 'The Idiot', '3', 'The Idiot e um livro de Dostoievski', 3)
-INSERT INTO Livro VALUES (5, 'White Nights', '4', 'White Nights e um livro de Dostoievski', 3)
+**Tabela:** Livro
+
+| id | titulo | isbn | descricao | id_autor |
+| --- | --- | --- | --- | --- |
+| 1 | Macbeth | 0 | Macbeth e um livro de Shakespeare | 1 |
+| 2 | Hamlet | 1 | Hamlet e um livro de Shakespeare | 1 |
+| 3 | Emma | 2 | Emma e um livro de Austen | 2 |
+| 4 | The Idiot | 3 | The Idiot e um livro de Dostoievski | 3 |
+| 5 | White Nights | 4 | White Nights e um livro de Dostoievski | 3 |
+
+## API
+Os endpoints disponíveis estão listados abaixo:
+
+| Caminho | Método | Descricao |
+| --- | --- | --- |
+| /autor | POST | Inserir autor |
+| /livro | POST | Inserir livro |
+| /autor/search/findByNome?nome={nome} | GET | Buscar autor por nome |
+| /autor/search/findByAutor_Nome?nome={nome} | GET | Buscar livros por nome do autor |
+| /autor/search/findByTitulo?titulo={titulo} | GET | Buscar livros por título |
+| /autor/search/findByIsbn?isbn={isbn} | GET | Buscar livros por código ISBN |
+
+## Contribuição
+Pré Requisitos necessários para execução do projeto:
+- Java 8
+- Maven
+- Docker (Serviço e Usuário) 
+
+Ao contribuir com o projeto, a imagem do projeto em docker deve ser gerada. Para isto, basta executar o comando abaixo tendo como base o diretório raiz do projeto:
+
+```bash
+$ ./mvnw install dockerfile:build
+```
+
+Após a imagem do container ser gerada, a mesma deve ser disponibilizada no dockerhub. Para isto realize o login no docker com sua conta, e execute o comando de push:
+
+```bash
+$ docker login
+$ docker push vinibiavatti/app
+```
 
 ## Equipe
 - Vinícius
