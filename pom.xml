@@ -16,7 +16,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<docker.image.prefix>furb-trabalho-docker</docker.image.prefix>
+		<docker.image.prefix>vinibiavatti</docker.image.prefix>
 	</properties>
 
 	<dependencies>
