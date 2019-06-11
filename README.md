@@ -1,10 +1,10 @@
 # FURB - Trabalho Docker
 FURB - Universidade Regional de Blumenau - Trabalho de Sistemas distribuídos
 
-## App
+## Aplicação
 Esta aplicação simula um serviço de API REST com base no framework Springboot executada através de um container. Existem apenas duas entidades relacionadas entre sí, e dois repositórios sem nenhuma rotina de autenticação. O banco de dados H2 foi utilizado para simular dados em memória.
 
-## Ambiente
+## Execução
 Para montagem do ambiente, é necessário que o docker esteja instalado na máquina. Após a instalação do docker, a image do dockerhub deve ser baixada através do comando:
 
 ```bash
