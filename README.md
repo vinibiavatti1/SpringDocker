@@ -8,7 +8,7 @@ Esta aplicação simula um serviço de API REST com base no framework Springboot
 Para montagem do ambiente, é necessário que o docker esteja instalado na máquina. Após a instalação do docker, a image do dockerhub deve ser baixada através do comando:
 
 ```bash
-$ docker push vinibiavatti/app
+$ docker pull vinibiavatti/app
 ```
 
 Após a imagem estar disponível localmente, o comando abaixo deve ser executado para iniciar a aplicação:
