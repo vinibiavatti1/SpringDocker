@@ -54,9 +54,9 @@ Os endpoints disponíveis estão listados abaixo:
 | /autor | POST | Inserir autor |
 | /livro | POST | Inserir livro |
 | /autor/search/findByNome?nome={nome} | GET | Buscar autor por nome |
-| /autor/search/findByAutor_Nome?nome={nome} | GET | Buscar livros por nome do autor |
-| /autor/search/findByTitulo?titulo={titulo} | GET | Buscar livros por título |
-| /autor/search/findByIsbn?isbn={isbn} | GET | Buscar livros por código ISBN |
+| /livro/search/findByAutor_Nome?nome={nome} | GET | Buscar livros por nome do autor |
+| /livro/search/findByTitulo?titulo={titulo} | GET | Buscar livros por título |
+| /livro/search/findByIsbn?isbn={isbn} | GET | Buscar livros por código ISBN |
 
 ## Contribuição
 Pré Requisitos necessários para execução do projeto:
