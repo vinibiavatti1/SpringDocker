@@ -1,7 +1,4 @@
-# FURB - Trabalho Docker
-FURB - Universidade Regional de Blumenau - Trabalho de Sistemas distribuídos
-
-## Aplicação
+# Aplicação Spring em Docker
 Esta aplicação simula um serviço de API REST com base no framework Springboot executada através de um container. Existem apenas duas entidades relacionadas entre sí, e dois repositórios sem nenhuma rotina de autenticação. O banco de dados H2 foi utilizado para simular dados em memória.
 
 ## Execução
@@ -76,9 +73,4 @@ Após a imagem do container ser gerada, a mesma deve ser disponibilizada no dock
 $ docker login
 $ docker push vinibiavatti/app
 ```
-
-## Equipe
-- Vinícius
-- Alexandre
-- Bryan
 
